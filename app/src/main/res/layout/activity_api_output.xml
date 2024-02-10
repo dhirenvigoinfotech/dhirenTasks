@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ApiOutputActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFetchData"
+                android:text="Fetch Data"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp">
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductTitle"
+                android:text="Prodcut Title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductDescription"
+                android:text="Prodcut Description"
+                android:layout_below="@+id/tvProductTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductPrice"
+                android:text="Prodcut Price"
+                android:layout_below="@+id/tvProductDescription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductRating"
+                android:text="Prodcut Rating"
+                android:layout_below="@+id/tvProductPrice"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductStock"
+                android:text="Prodcut Stock"
+                android:layout_below="@+id/tvProductRating"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductBrand"
+                android:text="Prodcut Brand"
+                android:layout_below="@+id/tvProductStock"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductCategory"
+                android:text="Prodcut Category"
+                android:layout_below="@+id/tvProductBrand"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivProductThumbnail"
+                android:layout_below="@+id/tvProductCategory"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:contentDescription="Product thumbnail">
+            </ImageView>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
