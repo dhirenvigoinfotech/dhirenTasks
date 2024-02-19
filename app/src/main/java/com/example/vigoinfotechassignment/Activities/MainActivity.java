@@ -1,12 +1,12 @@
 package com.example.vigoinfotechassignment.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.net.Network;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +16,8 @@ import android.widget.Toast;
 import com.example.vigoinfotechassignment.R;
 
 public class MainActivity extends AppCompatActivity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnLaunchProject1 = findViewById(R.id.btnLaunchProject1);
         Button btnLaunchProject2 = findViewById(R.id.btnLaunchProject2);
         Button btnLaunchProject3 = findViewById(R.id.btnLaunchProject3);
+        Button btnLaunchProject4 = findViewById(R.id.btnLaunchProject4);
 
         btnLaunchProject1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
                 launchProject3();
             }
         });
+
+        btnLaunchProject4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launchProject4();
+            }
+        });
     }
 
     private void launchProject1(){
@@ -72,6 +82,14 @@ public class MainActivity extends AppCompatActivity {
         intent.setComponent(new ComponentName("com.example.vigoinfotechassignment","com.example.vigoinfotechassignment.Activities.InputActivity"));
         startActivity(intent);
     }
+
+    private void launchProject4(){
+        Toast.makeText(MainActivity.this, "Service task is Opened", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent();
+        intent.setComponent(new ComponentName("com.example.vigoinfotechassignment","com.example.vigoinfotechassignment.Activities.MusicActivity"));
+        startActivity(intent);
+    }
+
     private boolean isConnectedToInternet(){
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivityManager != null){
