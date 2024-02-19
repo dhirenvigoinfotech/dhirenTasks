@@ -1,4 +1,4 @@
-package com.example.vigoinfotechassignment.SQLiteHelper;
+package com.example.vigoinfotechassignment.Helper;
 
 import android.content.ContentValues;
 import android.content.Context;

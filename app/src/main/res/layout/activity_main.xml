@@ -36,5 +36,15 @@
         android:layout_marginTop="20dp">
     </Button>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLaunchProject4"
+        android:text="BG/FG Task"
+        android:layout_below="@+id/btnLaunchProject3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+    </Button>
+
 
 </RelativeLayout>
