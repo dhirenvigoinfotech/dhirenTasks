@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.vigoinfotechassignment" />
+                  <option name="mobileSdkAppId" value="1:381281389912:android:6be91b56fa201f258be92d" />
+                  <option name="projectId" value="vigoinfotech-2e87c" />
+                  <option name="projectNumber" value="381281389912" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
