@@ -7,7 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.vigoinfotechassignment.SQLiteHelper.DatabaseHelper;
+import com.example.vigoinfotechassignment.Helper.DatabaseHelper;
 import com.example.vigoinfotechassignment.Model.Note;
 import com.example.vigoinfotechassignment.Adapter.NoteAdapter;
 import com.example.vigoinfotechassignment.R;

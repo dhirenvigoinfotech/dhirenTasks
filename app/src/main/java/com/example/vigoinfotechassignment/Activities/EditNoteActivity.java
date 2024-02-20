@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.vigoinfotechassignment.SQLiteHelper.DatabaseHelper;
+import com.example.vigoinfotechassignment.Helper.DatabaseHelper;
 import com.example.vigoinfotechassignment.Model.Note;
 import com.example.vigoinfotechassignment.R;
 
